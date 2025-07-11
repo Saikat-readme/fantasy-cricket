@@ -1,0 +1,423 @@
+<html>
+<head>
+<title>BigFan11</title>
+<style>
+    .my_cover{
+        width: 100%;
+        height: 350px;
+    }
+    .container{
+        width:100%;
+        height:350px;
+        position: relative;
+    }
+    .text-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin: 20px 0;
+}
+
+
+button {
+color: white;
+background-color: green;
+padding: 5%;
+border-radius: 8px;  
+margin: 10px 5px; /* Add some spacing between buttons */
+}
+    .main{
+        width:80%;
+        margin:  auto;
+       
+        height:400px;
+    }
+    .main-title{
+        color:#ff5722;
+       text-align: center;
+    }
+    .secondary-title{
+        color: green;
+        text-align: center;
+        margin-top: 50px;
+       
+    }
+    .main-text{
+        text-align: center;
+        margin-top: 20px;
+        font-size:20px ;
+
+    }
+    
+.section {
+padding: 40px 20px;
+background-color: #f9f9f9;
+}
+
+.section-heading {
+font-size: 2rem;
+color: #333;
+text-align: center;
+margin-bottom: 10px;
+}
+
+.section-subheading {
+font-size: 1.2rem;
+color: #666;
+text-align: center;
+margin-bottom: 30px;
+}
+
+/* Row and Columns */
+.row {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.col-md-3 {
+flex: 1 1 calc(25% - 20px); /* Adjust width with padding */
+margin: 10px;
+max-width: calc(25% - 20px);
+box-sizing: border-box;
+}
+
+/* Child Section Styling */
+.child-section {
+background: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 20px;
+text-align: left;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.child-section:hover {
+transform: translateY(-5px);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon img {
+max-width: 50px;
+height: auto;
+margin-bottom: 10px;
+}
+
+.name {
+font-size: 1.1rem;
+font-weight: 600;
+color: #222;
+margin-bottom: 8px;
+}
+
+.content {
+font-size: 0.95rem;
+color: #555;
+line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.col-md-3 {
+    flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+    max-width: calc(50% - 20px);
+}
+}
+
+@media (max-width: 480px) {
+.col-md-3 {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+}
+
+.section-subheading {
+    font-size: 1rem;
+}
+}
+/* General Content Styling */
+.content {
+background-color: #ffffff;
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin: 20px 0;
+}
+
+.section-heading {
+font-size: 2rem;
+color: #333;
+text-align: left;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+.section-subheading {
+font-size: 1.2rem;
+color: #666;
+text-align: left;
+margin-bottom: 20px;
+font-style: italic;
+}
+
+/* General Content Styling */
+.content {
+background-color: #ffffff;
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin: 20px 0;
+}
+
+.section-heading {
+font-size: 2rem;
+color: #333;
+text-align: left;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+.section-subheading {
+font-size: 1.2rem;
+color: #666;
+text-align: left;
+margin-bottom: 20px;
+font-style: italic;
+}
+
+/* Steps Styling */
+.name {
+font-size: 1.1rem;
+font-weight: 600;
+color: #222;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+
+.text_grey {
+font-size: 0.95rem;
+color: #555;
+line-height: 1.5;
+margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.content {
+    padding: 15px;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+}
+
+.section-subheading {
+    font-size: 1.1rem;
+}
+
+.name {
+    font-size: 1rem;
+}
+
+.text_grey {
+    font-size: 0.9rem;
+}
+}
+
+
+
+    .bigfan11-image{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 9%;
+    }
+    .img-text{
+        position: absolute;
+        right:100px ;
+        top: 300px;
+        height:40px;
+        color:red;
+    }
+    
+    
+    
+    
+   /* Footer Styling */
+.footer-parent {
+background-color: #222;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+border-top: 3px solid #ff5722; /* Highlighting border at the top */
+}
+
+.footer {
+max-width: 800px;
+margin: 0 auto;
+padding: 10px 20px;
+font-family: 'Arial', sans-serif;
+line-height: 1.6;
+}
+
+.footer p {
+margin: 10px 0;
+font-size: 0.95rem;
+}
+
+.footer p b {
+font-size: 1.2rem;
+font-weight: bold;
+color: #ff5722; /* Highlighted text color */
+}
+
+.footer p:last-child {
+font-size: 0.85rem;
+color: #f5f5f5; /* Slightly lighter text for disclaimers */
+font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.footer {
+    padding: 10px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer p b {
+    font-size: 1rem;
+}
+}
+
+</style>
+</head>
+<body bgcolor="white">
+<table border="0" width="100%" bgcolor="green"  height="5%">
+<tr>
+<th width="10%"><font color="white" size="4"><a href="#">HOME </a> </font></th>
+
+<th width="10%"><font color="white" size="4"><a href="About Us.html">ABOUT US</a></font> </th>
+
+<th width="10%"><font color="white" size="4"><a href="#">HOW TOPLAY</a></font</th>
+
+<th width="10%"><font color="white" size="4"><a href="#">Informations Legalities</a></font></th> 
+
+<th width="10%"><font color="white" size="4"><a href="#">TERMS and CONDITION</a></font></th> 
+
+<th width="10%"><font color="white" size="4"><a href="#">Cancellation & Refund</a></font></th> 
+
+<th width="10%"><font color="white" size="4"><a href="#">Gaming Policy</a></font></th> 
+
+<th width="10%"><font color="white" size="4"><a href="#">PRIVACY POLICY</a>	</font></th> 
+
+<th width="10%"><font color="white" size="4"><a href="#">WITHDRAWL POLICY</a></font></th> 
+</tr>
+</table>
+<div class="container">
+    <img  class="my_cover" src="C:\Users\saikat mukherjee ram\Downloads\green-cricket-sports-background-with-illustration-players-golden-trophy-cup_1302-5494.webp" alt="">
+    </div>
+    
+            
+    <div class="text-section">
+        <div class="text">
+            
+        <h2 class="text-title"><b>Download the official Bigfan11 app available soon in playstore</b></h2>
+        <button><b> DOWNLOAD NOW </b></button>
+       
+    </div>
+    </div>
+    <img class="bigfan11-image" src="c:\Users\saikat mukherjee ram\Desktop\bigfan11.jpg" alt="">
+    <p class="img-text">Bigfan11</p>
+    
+    
+    <div class="main">
+    <h1 class="main-title">It's easy to start playing fantasy Cricket on Bigfan11</h1>
+    <h4 class="secondary-title"> Play Fantasy cricket on Bigfan11 and win huge!</h4>
+    <p class="main-text"> Want to enjoy fantasy games like cricket but just can't manage the time? Well, Bigfan11 is the answer you need. This is the place where your favorite fantasy sports come alive. Enjoy playing fantasy cricket, fantasy Football, and fantasy kabaddi right on your device. Pick teams of your choice and play the game.
+    
+        Bigfan11  , a part of Games24x7, brings the best fantasy games at your fingertips.  Register with us, pick a game and win cash daily. Don't wait further. Join us now and enjoy the fantasy games.
+        
+        Fantasy cricket and football or any fantasy games in general boost your skill and let you win real cash rewards. We offer a safe and secured platform to enjoy online fantasy sports at your leisure. Get started with the game right away and join India's fastest growing online fantasy cricket app and experience the real action and thrill.</p>
+    </div>
+    <div class="section">
+        <h2 class="section-heading poppins-semibold">Discover the Magic of Fantasy with us</h2>
+        <p class="section-subheading">Get a Glimpse of What's to Come</p>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="child-section text-left">
+              <div class="icon"><img src="C:\Users\saikat mukherjee ram\Desktop\refer.jpg"></div>
+              <div class="name">Refer & Earn </div>
+              <div class="content">Refer a friend and earn for each successful referral.</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="child-section text-left">
+              <div class="icon"><img src="C:\Users\saikat mukherjee ram\Desktop\boost.jpg"></div>
+              <div class="name">Fastest Withdrawals</div>
+              <div class="content">Instant Payments & all major credit/ debit cards accepted.</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="child-section text-left">
+              <div class="icon"><img src="C:\Users\saikat mukherjee ram\Desktop\players.jpg"></div>
+              <div class="name">Responsible Gaming</div>
+              <div class="content">Strict Fair Play Policy & top-notch Anti-Fraud Detection.</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="child-section text-left">
+              <div class="icon"><img src="C:\Users\saikat mukherjee ram\Desktop\prizes.jpg"></div>
+              <div class="name">100% safe & secure</div>
+              <div class="content">100% Secured Payment Options.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+        <div class="content">
+          <h2 class="section-heading">3 Easy Steps</h2>
+          <p class="section-subheading"><b>Win Prizes on Your Fantasy Journey</b></p>
+          <p class="name">Step 1 : Select A Match</p>
+          <p class="text_grey">Choose an upcoming match that you're eager to participate in and showcase your skills.
+          <p class="name">Step 2 : Create Your Team</p>
+          <p class="text_grey">Build your team by selecting players using virtual credit points.
+          <p class="name">Step 3 : Join Contests</p>
+          <p class="text_grey">Pick from a variety of contests and join the fun of competing.
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="footer-parent">
+        <div class="footer">
+    
+        
+        
+           <p> <b>BIGFAN11 FANTASY CRICKET GAME</b></p>
+    
+                <p> Contact us   Bigfan11@gmail.com</p>
+                
+                <p>Our office Bolpur,West Bengal,731204
+    
+                    </p>
+                    <p>*The game involves an element of financial risk and may be addictive. Please play responsibly and at your own risk.</p>
+    
+                       <p> *This game is applicable for users 18+ only.</p>
+            
+            </div>
+
+
+</body>
+</html>

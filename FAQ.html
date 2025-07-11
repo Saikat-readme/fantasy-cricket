@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy FAQ</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: whitesmoke;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #0cac2e7f;
+            color:white;
+            margin-top: 20px;
+            font-size: 5em;
+            
+        }
+
+        .faq-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-question {
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .faq-question:hover {
+            color: green;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            font-size: 1.2em;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 1em;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f4e1d2;
+        }
+
+        .faq-menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .faq-menu a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+            color: green;
+            transition: color 0.3s;
+        }
+
+        .faq-menu a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQ</h1>
+    <div class="faq-menu">
+        <a href="#what-is--BigFan11">What is -BigFan11?</a>
+        <a href="#how-to-signup">How to Sign Up?</a>
+        <a href="#login-issues">Login Issues</a>
+        <a href="#account-creation">Account Creation</a>
+        <a href="#play-without-knowledge">Playing Without Knowledge</a>
+    </div>
+
+    <div class="faq-container">
+        <div class="faq-item" id="what-is-BigFan11">
+            <div class="faq-question">Q: What is BigFan11?</div>
+            <div class="faq-answer">A:-BigFan11 is India’s best Fantasy Sports platform, with a rapidly growing user base and exponentially increasing popularity.</div>
+        </div>
+        <div class="faq-item" id="how-to-signup">
+            <div class="faq-question">Q: How do I sign up on  BigFan11?</div>
+            <div class="faq-answer">A: Easy breezy! Once you are on  BigFan11, choose your sport and register by filling out a short form.</div>
+        </div>
+        <div class="faq-item" id="login-issues">
+            <div class="faq-question">Q: Why can’t I log in to my  BigFan11 account?</div>
+            <div class="faq-answer">A: Sorry for the inconvenience! Please check whether you entered the correct Mobile No. and OTP and try again. If you are still facing the same issue, you can connect with our support team.</div>
+        </div>
+        <div class="faq-item" id="account-creation">
+            <div class="faq-question">Q: How many accounts can I create with the same mobile number on  BigFan11?</div>
+            <div class="faq-answer">A: You can create only one account with one mobile number on  BigFan11. Not only that, you are prohibited from creating more than one account on  BigFan11. Creation of multiple accounts by a User violates our Fair Play Policy.</div>
+        </div>
+        <div class="faq-item" id="play-without-knowledge">
+            <div class="faq-question">Q: I don't know much about cricket. Can I still play?</div>
+            <div class="faq-answer">A: Yes, you can! Just check out our “How To Play  BigFan11 Fantasy Cricket” section!</div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025   BigFan11 Fantasy  Rights Reserved. Designed By BigFan11.
+    </footer>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

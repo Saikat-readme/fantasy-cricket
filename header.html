@@ -1,0 +1,44 @@
+/* Reset styles */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center-align menu items horizontally */
+  align-items: center; /* Vertically center items */
+  gap: 20px; /* Space between menu items */
+  background-color: #333; /* Background color of the menu */
+  padding: 10px 20px;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  font-size: 16px; /* Adjust font size */
+  font-family: Arial, sans-serif;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #f0a500; /* Highlight color on hover */
+}
+
+.download-button {
+  background-color: #f0a500; /* Button-specific background */
+  color: #333; /* Button text color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px 15px; /* Padding for button */
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #c97d00; /* Darker color on hover */
+}

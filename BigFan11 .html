@@ -1,0 +1,643 @@
+ <DOCTYPE html>
+  <html lang="en">
+<head>
+<title>BigFan11</title>
+<style>
+ /* General Styles */
+ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgba(47, 47, 47, 0);
+  color: lightblue;
+  padding: 0.1rem .0.0rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.navbar {
+  position:fixed ;
+  top: 0;
+  width:100% ;
+  height: 80px;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+.logo img {
+  max-height: 70px; /* Adjust to control logo size */
+  width: auto;
+}
+
+
+/* General styling */
+
+
+.navigation {
+  position: relative;
+}
+
+
+/* Menu Button */
+.menu-button {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.menu-button span {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* Menu */
+.menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-start;
+  padding: 20px;
+  z-index: 999;
+}
+
+.menu.active {
+  display: inline-flex;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 5px 20px;
+  display: flex;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .menu-button {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    transform: scale(1.5); /* Larger button for mobile */
+  }
+
+  .menu li a {
+    font-size: 2rem; /* Larger text for mobile */
+  }
+}
+
+.my_cover {
+  width: 100%; /* Responsive image */
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+    .main{
+        width:80%;
+        margin:  auto;
+       
+        height:600px;
+    }
+    .main-title{
+        color:#ff5722;
+       text-align: center;
+    }
+    .secondary-title{
+        color: green;
+        text-align: center;
+        margin-top: 50px;
+       
+    }
+    .main-text{
+        text-align: center;
+        margin-top: 40px;
+        font-size:20px ;
+
+    }
+    /* */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section-subheading {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .col-md-3 {
+      flex: 1 1 calc(25% - 20px); /* Default 4 panels in a row */
+      max-width: calc(25% - 20px);
+      box-sizing: border-box;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .child-section .icon img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .child-section .name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .child-section .content {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Tablet View */
+    @media (max-width: 1024px) {
+      .col-md-3 {
+        flex: 1 1 calc(50% - 20px); /* 2 panels in a row */
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    /* Mobile View */
+    @media (max-width: 768px) {
+      .col-md-3 {
+        flex: 1 1 100%; /* 1 panel per row */
+        max-width: 100%;
+      }
+    }
+
+/* third image*/
+.bigfan_cover {
+  width: 100%; /* Ensures the image takes up the full width of its container */
+  height: 80%; /* Maintains the aspect ratio */
+  max-width: 100%; /* Prevents the image from exceeding its natural width */
+}
+
+.container {
+  width: 100%; /* Ensures the container is responsive */
+  max-width: 100%; /* Ensures it doesn’t exceed its parent container */
+  display: flex; /* Optional: Centers the content horizontally if needed */
+  justify-content: center; /* Optional: Centers the image within the container */
+}
+
+ /* Container Styling */
+ .container {
+    width: 100%; /* Make container full-width */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center the image horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  /* Image Styling */
+  .easy_steps {
+    width: 100%; /* Make image responsive */
+    max-width: 100%; /* Prevent image from exceeding its original size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom spacing */
+  }
+
+  /* Optional: Add Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px; /* Add spacing around the container */
+    }
+
+    .easy_steps {
+      border-radius: 8px; /* Optional: Add rounded corners for a modern look */
+    }
+  }
+
+
+
+ 
+
+
+
+  
+    
+    
+    
+   /* Style for the menu container */
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color:white; /* Light background color */
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Styling for the menu bar */
+.menu-bar {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Styling for the menu list */
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px; /* Spacing between items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Styling for the menu items */
+.menu-list li {
+  background-color: #ffffff00; /* White background for items */
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 1px;
+  transition: transform s ease, box-shadow 2s ease;
+}
+
+.menu-list li:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 2 2px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Styling for menu links */
+.menu-list li a {
+  text-decoration: none;
+  color: #333; /* Dark text color */
+  font-weight: bold;
+}
+
+.menu-list li a:hover {
+  color: #00ff1a; /* Blue color on hover */
+}
+
+ 
+    
+   /* Footer Styling */
+.footer-parent {
+background-color: #222;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+border-top: 3px solid #ff5722; /* Highlighting border at the top */
+}
+
+.footer {
+max-width: 800px;
+margin: 0 auto;
+padding: 15px 1px;
+font-family: 'Arial', sans-serif;
+line-height: 1.6;
+}
+
+.footer p {
+margin: 10px 0;
+font-size: 0.95rem;
+}
+
+.footer p b {
+font-size: 1.2rem;
+font-weight: bold;
+color: #ff5722; /* Highlighted text color */
+}
+
+.footer p:last-child {
+font-size: 0.85rem;
+color: #f5f5f5; /* Slightly lighter text for disclaimers */
+font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.footer {
+    padding: 10px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer p b {
+    font-size: 1rem;
+}
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+ 
+  <!-- Header Section -->
+  
+  
+  <header>
+  <div style="height: 200000px;"></div>
+
+  <script src="scrool.js"></script>
+    
+    <nav class="navbar">
+      <!-- Logo Section -->
+      <div class="logo">
+        <a href="#"><img src="c:\Users\saikat mukherjee ram\Downloads\bigfan11 logo with shadow_115627.png" alt="Logo"></a>
+        
+      </div>
+    </nav>
+     
+      <nav class="navigation">
+        <!-- Menu Button for Mobile and Tablet View -->
+        <div class="menu-button" id="menuButton">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <ul class="menu" id="menu">
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="download" class="download-button">Download App</a></li>
+        </ul>
+      </nav>
+  </header>
+  
+  <script src="script.js"></script>
+
+  <div class="col-md-6">
+    <div class="container">
+      <img class="my_cover" src="c:\Users\saikat mukherjee ram\Downloads\BIGFAN11 banner1_114305.jpg" alt="Responsive Banner">
+      
+    </div>
+  
+    </div>
+  </div>
+    
+    <div class="main">
+    <h1 class="main-title">It's easy to start playing fantasy Cricket on Bigfan11</h1>
+    <h4 class="secondary-title"> Play Fantasy cricket on Bigfan11 and win huge!</h4>
+    <p class="main-text"> Want to enjoy fantasy games like cricket but just can't manage the time? Well, Bigfan11 is the answer you need. This is the place where your favorite fantasy sports come alive. Enjoy playing fantasy cricket, fantasy Football, and fantasy kabaddi right on your device. Pick teams of your choice and play the game.
+    
+        Bigfan11  , a part of Games24x7, brings the best fantasy games at your fingertips.  Register with us, pick a game and win cash daily. Don't wait further. Join us now and enjoy the fantasy games.
+        
+        Fantasy cricket and football or any fantasy games in general boost your skill and let you win real cash rewards. We offer a safe and secured platform to enjoy online fantasy sports at your leisure. Get started with the game right away and join India's fastest growing online fantasy cricket app and experience the real action and thrill.</p>
+    </div>
+
+    <div class="container">
+      <img  class="my_cover" src="c:\Users\saikat mukherjee ram\Downloads\bigfan11 banner2_115518.jpg" alt="">
+      </div>
+      
+
+
+      <div class="section">
+        <h2 class="section-heading poppins-semibold">Discover the Magic of Fantasy with us</h2>
+        <p class="section-subheading">Get a Glimpse of What's to Come</p>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="child-section text-left">
+              <div class="icon"><img src="c:\Users\saikat mukherjee ram\Desktop\refer.jpg" alt="Refer & Earn"></div>
+              <div class="name">Refer & Earn</div>
+              <div class="content">Refer a friend and earn for each successful referral.</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="child-section text-left">
+              <div class="icon"><img src="c:\Users\saikat mukherjee ram\Desktop\boost.jpg" alt="Fastest Withdrawals"></div>
+              <div class="name">Fastest Withdrawals</div>
+              <div class="content">Instant Payments & all major credit/debit cards accepted.</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="child-section text-left">
+              <div class="icon"><img src="c:\Users\saikat mukherjee ram\Desktop\players.jpg" alt="Responsible Gaming"></div>
+              <div class="name">Responsible Gaming</div>
+              <div class="content">Strict Fair Play Policy & top-notch Anti-Fraud Detection.</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="child-section text-left">
+              <div class="icon"><img src="c:\Users\saikat mukherjee ram\Desktop\prizes.jpg" alt="100% safe & secure"></div>
+              <div class="name">100% Safe & Secure</div>
+              <div class="content">100% Secured Payment Options.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="col-md-7">
+      <div class="container">
+        <img  class="bigfan_cover" src="c:\Users\saikat mukherjee ram\Downloads\bigfan11 banner 5_125006.jpg" alt="">
+        </div>
+       
+      </div>
+    
+      <div class="fourth image">
+        <div class="container">
+          <img class="easy_steps" src="c:/Users/saikat mukherjee ram/Downloads/BIGFAN11 BANNER 6_094354.jpg" alt="Responsive Banner">
+        </div>
+      </div>
+      
+
+    
+    <div class="menu-container">
+        <nav class="menu-bar">
+            <ul class="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="how to play.html">How to Play</a></li>
+                <li><a href="legalities.html">Legalities</a></li>
+                <li><a href="terms and condition.html">Terms & Conditions</a></li>
+                <li><a href="cancellition & refund.html">Cancellation & Refund</a></li>
+                <li><a href="responsible game policy.html">Gaming Policy</a></li>
+                <li><a href="privacy policy.html">Privacy Policy</a></li>
+                
+                <li><a href="FAQ.html">FAQ</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    
+    
+    
+    
+    <div class="footer-parent">
+      <div class="logo">
+        <a href="#"></a>
+          <img src="c:\Users\saikat mukherjee ram\Downloads\bigfan11 logo with shadow_115627.png" alt="Logo">
+      </div>
+        <div class="footer">
+    
+        
+        
+           <p> <b>BIGFAN11 FANTASY SPORTS GAME</b></p>
+    
+                <p> Contact us   Bigfan11@gmail.com</p>
+                
+                <p>Our office Bolpur,West Bengal,731204
+    
+                    </p>
+                    <p>*The game involves an element of financial risk and may be addictive. Please play responsibly and at your own risk.</p>
+    
+                       <p> *This game is applicable for users 18+ only.</p>
+                       * The Indian states with no clearance regarding the offering of pay-to-play contests include Sikkim,Telangana, Nagaland,Andhra Pradesh ,Odisha(Orissa) and Assam In this context, BigFan11 does not permit the users identified as the residents of Sikkim, Telangana, Nagaland ,Andhra Pradesh,Odisha(Orissa) and Assam to participate in the pay-to-play contest(s) organized by BigFan11. You will not able to withdraw if you are from above mentioned (Banned) state.*
+            
+                  </div>
+                 
+                
+                 
+<!-- Fixed Download Button -->
+<div class="sticky_downloadapp_button sticky">
+  <div onclick="showDiv()">
+    <a title="Download App" id="mobile-download-1" class="start_download_lightbox" href="#">
+      DOWNLOAD APP
+    </a>
+  </div>
+</div>
+
+<script>
+  // Apply styles dynamically using JavaScript
+  const stickyButtonContainer = document.querySelector('.sticky_downloadapp_button');
+  const stickyButtonDiv = stickyButtonContainer.querySelector('div');
+  const stickyButtonLink = stickyButtonContainer.querySelector('a');
+
+  // Function to adjust button size for different screen sizes
+  function adjustButtonSize() {
+    const windowwidth = window.innerWidth;
+
+    // Mobile view styles (for smaller screens)
+    if (windowwidth <= 768) {
+      stickyButtonDiv.style.padding = '30px 50px'; // Smaller padding for mobile view
+      stickyButtonLink.style.fontSize = '100%';   // Smaller font size for mobile view
+      
+    } else {
+      // Desktop view styles (for larger screens)
+      stickyButtonDiv.style.padding = '20px 30px'; // Larger padding for desktop view
+      stickyButtonLink.style.fontSize = '20px';    // Larger font size for desktop view
+    }
+  }
+
+  // Initial size adjustment
+  adjustButtonSize();
+
+  // Adjust the size on window resize
+  window.addEventListener('resize', adjustButtonSize);
+
+  // Container Styling
+  stickyButtonContainer.style.position = 'fixed';
+  stickyButtonContainer.style.bottom = '10px';
+  stickyButtonContainer.style.left = '50%';
+  stickyButtonContainer.style.transform = 'translateX(-50%)';
+  stickyButtonContainer.style.zIndex = '1000';
+
+  // Button Styling
+  stickyButtonDiv.style.backgroundColor = '#007bff';
+  stickyButtonDiv.style.borderRadius = '8px';
+  stickyButtonDiv.style.textAlign = 'center';
+  stickyButtonDiv.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+  stickyButtonDiv.style.cursor = 'pointer';
+
+  // Link Styling
+  stickyButtonLink.style.textDecoration = 'none';
+  stickyButtonLink.style.color = 'white';
+  stickyButtonLink.style.fontWeight = 'bold';
+
+  // Hover Effect
+  stickyButtonLink.addEventListener('mouseover', function() {
+    stickyButtonLink.style.color = '#f8f9fa';
+    stickyButtonLink.style.textDecoration = 'underline';
+  });
+
+  stickyButtonLink.addEventListener('mouseout', function() {
+    stickyButtonLink.style.color = 'white';
+    stickyButtonLink.style.textDecoration = 'none';
+  });
+
+  // Active State
+  stickyButtonDiv.addEventListener('mousedown', function() {
+    stickyButtonDiv.style.backgroundColor = '#0056b3';
+  });
+
+  stickyButtonDiv.addEventListener('mouseup', function() {
+    stickyButtonDiv.style.backgroundColor = '#007bff';
+  });
+
+
+
+</script>
+
+</body>
+</html>
